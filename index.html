@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class = "welcome-page">
-        <h1>Word craft</h1>
-        <p>Guess maximum of words in one minute</p>
-        <button>Start!</button>
+    <section class="page1">
+        <div class="welcome-page">
+            <h1 class="font">Word craft</h1>
+            <p class="font">Guess maximum of words in two minutes</p>
+
+        </div>
+        <div class="Btn"><button id="Btn-start">Start!</button></div>
+    </section>
+
+    <div class="Game-page">
+        <div class="header">
+            <div id="minDec" class="number">00</div>
+            <div id="hint"></div>
+        </div>
+
+        <div class="letters">
+            <ul>
+                <li><button>L</button></li>
+                <li><button>A</button></li>
+                <li><button>E</button></li>
+                <li><button>G</button></li>
+            </ul>
+        </div>
+        <div class="words"></div>
     </div>
-    <div class = "Game-page">
-        <span id="minDec" class="number">0</span>
-        <span id="minUni" class="number">0</span>
-        <button id = "hint">Hint</button>
-        <div class = "letters"></div>
-        <div class ="words"></div>
-    </div>
-    
+    <footer>
+        <!-- <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a> -->
+    </footer>
 </body>
+
 </html>
