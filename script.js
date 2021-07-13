@@ -149,7 +149,6 @@ function insertWord(word) {
 
 
 //reset function
-
 function reset(clearImage) {
     const clearInput = document.getElementById('word-guess');
     const btnLetters = document.querySelectorAll('.letterBtn');
@@ -166,6 +165,9 @@ function reset(clearImage) {
         img.style.display = "none";
     }
 }
+
+const btnReset = document.getElementById('reset');
+btnReset.addEventListener('click', reset);
 
 function gamefinished() {
     const winner = document.querySelector('.winner');

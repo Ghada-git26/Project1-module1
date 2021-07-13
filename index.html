@@ -19,7 +19,7 @@
         <div class="Btn"><button id="Btn-start">Start!</button></div>
     </section>
 
-    <div class="Game-page hidden">
+    <section class="Game-page hidden">
         <div class="images">
             <span id="picguess">?</span>
             <img style="display:none;" class="pic" src="" />
@@ -33,6 +33,7 @@
                 <span id="secDec" class="number">0</span>
                 <span id="secUni" class="number">0</span>
             </div>
+            <div id="reset"></div>
 
         </div>
 
@@ -44,16 +45,12 @@
         <div class="words">
             <input type="text" id="word-guess" value="" class="inputWord" readonly>
         </div>
-    </div>
+    </section>
 
     <section class="finalMessage">
         <p class="winner hidden">Winner<span>&#128079;</span></p>
         <p class="end hidden"> Try next time! <span>&#128400;</span></p>
-
     </section>
-
-
-
 </body>
 <script src="chronometer.js"></script>
 <script src="game.js"></script>
