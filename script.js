@@ -1,8 +1,33 @@
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
+//Chronometer functions
+const chronometer = new Chronometer();
+
+function printMinutes() {
+    const minDecElement = document.querySelector('#minDec');
+    const minUniElement = document.querySelector('#minUni');
+    let minutes = chronometer.getMinutes();
+    minDecElement.innerHTML = chronometer.computeTwoDigitNumber(minutes)[0];
+    minUniElement.innerHTML = chronometer.computeTwoDigitNumber(minutes)[1];
+}
+
+function printSeconds() {
+    const secDecElement = document.querySelector('#secDec');
+    const secUniElement = document.querySelector('#secUni');
+    let seconds = chronometer.getSeconds();
+    secDecElement.innerHTML = chronometer.computeTwoDigitNumber(seconds)[0];
+    secUniElement.innerHTML = chronometer.computeTwoDigitNumber(seconds)[1];
+}
+
+// function printSplit() {
+//     splitsElement.innerHTML += `<li> ${chronometer.split(printTime)} </li>`;
+// }
+
+// function clearSplits() {
+//     splitsElement.innerHTML = '';
+// }
+
+function printTime() {
+    printMinutes();
+    printSeconds();
+
+
 }

@@ -4,6 +4,10 @@ body {
     background-size: cover;
 }
 
+.page1 {
+    padding: 100px;
+}
+
 .welcome-page {
     text-align: center;
     margin: 30px;
@@ -46,8 +50,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 #hint:hover {
@@ -55,26 +59,59 @@ body {
     filter: drop-shadow(2px 2px 1px #FFF);
 }
 
-#minDec {
+.chronometer {
     border-radius: 3px;
     border: rgb(207, 158, 65) 2px solid;
-    width: 50px;
+    width: 80px;
     height: 50%;
     text-align: center;
 }
 
 ul {
     list-style-type: none;
+    background: rgb(227 186 108 / 42%);
+    border-radius: 10px;
+    border: 5px solid white;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.letterBtn {
+    width: 80px;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.enabled {
+    background: linear-gradient(rgb(227 186 108 / 42%), rgb(206, 118, 86));
+}
+
+.disabled {
+    background: linear-gradient(rgb(227 186 108 / 42%), rgb(125, 125, 125));
+}
+
+ul li {
+    padding: 20px;
 }
 
 .letters {
     margin: auto;
     text-align: center;
-    max-width: 300px;
 }
 
 .letters ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.Game-page {
+    padding: 100px;
 }
