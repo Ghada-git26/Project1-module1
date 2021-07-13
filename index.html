@@ -20,7 +20,12 @@
     </section>
 
     <div class="Game-page hidden">
+        <div class="images">
+            <span id="picguess">?</span>
+            <img style="display:none;" class="pic" src="" />
+        </div>
         <div class="header">
+            <div id="hint"></div>
             <div class="chronometer">
                 <span id="minDec" class="number">0</span>
                 <span id="minUni" class="number">0</span>
@@ -28,7 +33,7 @@
                 <span id="secDec" class="number">0</span>
                 <span id="secUni" class="number">0</span>
             </div>
-            <div id="hint"></div>
+
         </div>
 
         <div class="letters">
@@ -37,16 +42,21 @@
             </ul>
         </div>
         <div class="words">
-            <input type="text" id="word-guess" value="" class="inputWord">
-            <img style="display:none;" class="pic" src="" />
+            <input type="text" id="word-guess" value="" class="inputWord" readonly>
         </div>
     </div>
-    <footer>
-        <!-- <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a> -->
-    </footer>
+
+    <section class="finalMessage">
+        <p class="winner hidden">Winner<span>&#128079;</span></p>
+        <p class="end hidden"> Try next time! <span>&#128400;</span></p>
+
+    </section>
+
+
+
 </body>
 <script src="chronometer.js"></script>
-<script src="script.js"></script>
 <script src="game.js"></script>
+<script src="script.js"></script>
 
 </html>

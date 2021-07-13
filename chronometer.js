@@ -4,14 +4,17 @@ class Chronometer {
         this.intervalId = null;
     }
 
-    start(callback) {
+    start(printCallback, finishCallback) {
         this.intervalId = setInterval(() => {
             this.currentTime--;
             if (this.currentTime <= 0) {
                 this.stop();
+                if (finishCallback) {
+                    finishCallback();
+                }
             }
-            if (callback) {
-                callback();
+            if (printCallback) {
+                printCallback();
             }
         }, 1000);
     }
@@ -39,7 +42,7 @@ class Chronometer {
     }
 
     reset() {
-
+        gamefinished();
         this.currentTime = 0;
     }
 }
