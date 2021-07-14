@@ -61,31 +61,31 @@ const petsArray = [{
     {
         picture: "https://cdn.pixabay.com/photo/2013/07/13/11/56/frog-159002_960_720.png",
         id: 10,
-        name: "Frogg",
+        name: "Grenouille",
     },
 
     {
         picture: "https://image.freepik.com/free-vector/cute-cartoon-sloth-graphic_1324-328.jpg",
         id: 11,
-        name: "Sloth",
+        name: "Paresseux",
     },
 
     {
         picture: "https://www.maxpixel.net/static/photo/1x/Perched-Beak-Bill-Animal-Parrot-Branch-Bird-5978099.jpg",
         id: 12,
-        name: "Macaw",
+        name: "Perroquet",
     },
 
     {
         picture: "https://image.freepik.com/free-vector/happy-ant-cartoon_49499-58.jpg",
         id: 13,
-        name: "Ants",
+        name: "Fourmille",
     },
 
     {
         picture: "https://cdn.pixabay.com/photo/2017/03/05/02/59/little-bear-2117566_960_720.png",
         id: 14,
-        name: "Bear",
+        name: "Ours",
     },
 
 ]
@@ -94,6 +94,7 @@ var game = null;
 
 //Start function
 const btnStart = document.getElementById('Btn-start');
+const audio = document.querySelector('.audio');
 
 //Create new game and start it 
 btnStart.onclick = function() {
@@ -109,6 +110,10 @@ btnStart.onclick = function() {
     //the function took  2 other functions as  parameters
     // the first to diplay time, the second to handle time is up 
     game.start(printTime, gamefinished);
+
+    audio.volume = 0.15;
+    audio.loop = true;
+    audio.play();
 }
 
 //Chronometer functions
@@ -225,10 +230,14 @@ function reset(clearImage) {
 }
 //reset on click  
 const btnReset = document.getElementById('reset');
-btnReset.addEventListener('click', reset);
+btnReset.addEventListener('click', function() {
+    reset(false);
+});
 
 function gamefinished() {
     game.stop();
+    audio.pause();
+    audio.currentTime = 0;
     const finalMessage = document.querySelector('.finalMessage');
     const gamePage = document.querySelector('.Game-page');
     const winner = document.querySelector('.winner');
@@ -254,5 +263,3 @@ btnHp.onclick = function() {
     finalMessage.classList.add('hidden');
     page1.classList.remove('hidden');
 }
-
-const audio = document.querySelector('.audio').volume = 0.1;
