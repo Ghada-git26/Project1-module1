@@ -1,19 +1,13 @@
 const petsArray = [{
         picture: "https://image.freepik.com/vecteurs-libre/dessin-anime-aigle_119631-104.jpg",
-        name: "Aigle",
+        name: "Eagle",
         id: 0,
     },
     {
         picture: "https://cdn.pixabay.com/photo/2018/01/21/23/31/animal-3097792_1280.jpg",
         id: 1,
-        name: "Chouette",
+        name: "Owl",
     },
-    {
-        picture: "https://image.freepik.com/free-vector/cute-deer-cartoon_33070-2549.jpg",
-        id: 2,
-        name: "Faon",
-    },
-
 
     {
         picture: "https://data.whicdn.com/images/16522870/original.png",
@@ -22,7 +16,7 @@ const petsArray = [{
     },
 
     {
-        picture: "https://image.shutterstock.com/image-vector/cartoon-happy-cheetah-sitting-600w-478933588.jpg",
+        picture: "https://i.dlpng.com/static/png/6862950_preview.png",
         id: 4,
         name: "Jaguar",
     },
@@ -30,20 +24,20 @@ const petsArray = [{
     {
         picture: "https://image.freepik.com/vecteurs-libre/oie-dessin-anime-fond-blanc_194935-44.jpg",
         id: 5,
-        name: "Oie",
+        name: "Goose",
     },
 
     {
         picture: "https://previews.123rf.com/images/dualororua/dualororua1606/dualororua160600083/58809834-cartoon-mignon-z%C3%A8bre-s%C3%A9ance.jpg",
         id: 6,
-        name: "Zèbre",
+        name: "Zebra",
     },
 
 
     {
         picture: "https://image.freepik.com/vecteurs-libre/cartoon-cochon-jouer-dans-flaque-boue_29190-2304.jpg",
         id: 7,
-        name: "Cochon",
+        name: "pig",
     },
 
     {
@@ -55,37 +49,37 @@ const petsArray = [{
     {
         picture: "https://conceptdraw.com/a1691c3/p1/preview/640/pict--whale-funny-aquatic-fauna-vector-stencils-library",
         id: 9,
-        name: "Baleine",
+        name: "whale",
     },
 
     {
         picture: "https://cdn.pixabay.com/photo/2013/07/13/11/56/frog-159002_960_720.png",
         id: 10,
-        name: "Grenouille",
+        name: "Frogg",
     },
 
     {
         picture: "https://image.freepik.com/free-vector/cute-cartoon-sloth-graphic_1324-328.jpg",
         id: 11,
-        name: "Paresseux",
+        name: "Sloth",
     },
 
     {
         picture: "https://www.maxpixel.net/static/photo/1x/Perched-Beak-Bill-Animal-Parrot-Branch-Bird-5978099.jpg",
         id: 12,
-        name: "Perroquet",
+        name: "Parrot",
     },
 
     {
         picture: "https://image.freepik.com/free-vector/happy-ant-cartoon_49499-58.jpg",
         id: 13,
-        name: "Fourmille",
+        name: "Ant",
     },
 
     {
         picture: "https://cdn.pixabay.com/photo/2017/03/05/02/59/little-bear-2117566_960_720.png",
         id: 14,
-        name: "Ours",
+        name: "Bear",
     },
 
 ]
