@@ -89,9 +89,14 @@ var game = null;
 //Start function
 const btnStart = document.getElementById('Btn-start');
 const audio = document.querySelector('.audio');
+const winner = document.querySelector('.winner');
+const end = document.querySelector('.end');
 
 //Create new game and start it 
 btnStart.onclick = function() {
+    //hide final messages when you come back to the welcome page
+    end.classList.add('hidden');
+    winner.classList.add('hidden');
     game = new Game(petsArray);
 
     //display pages on the right order
@@ -234,15 +239,15 @@ function gamefinished() {
     audio.currentTime = 0;
     const finalMessage = document.querySelector('.finalMessage');
     const gamePage = document.querySelector('.Game-page');
-    const winner = document.querySelector('.winner');
-    const end = document.querySelector('.end');
     //if you answred more than 70%
     if ((this.game.currentIndex / game.gameArray.length) >= 0.7) {
         //display winner message
         winner.classList.remove('hidden');
+
     } else {
         //display try again message
         end.classList.remove('hidden');
+
     }
     //display the message page
     finalMessage.classList.remove('hidden');
