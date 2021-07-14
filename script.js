@@ -61,7 +61,19 @@ const petsArray = [{
 
 
 var game = null;
+//Start function
+const btnStart = document.getElementById('Btn-start');
 
+btnStart.onclick = function() {
+        game = new Game(petsArray)
+        const page1 = document.querySelector('.page1');
+        const gamePage = document.querySelector('.Game-page');
+        page1.classList.add('hidden');
+        gamePage.classList.remove('hidden');
+        insertWord(game.getCurrentAnimal().name);
+        game.start(printTime, gamefinished);
+    }
+    //Chronometer functions
 function printMinutes() {
     const minDecElement = document.querySelector('#minDec');
     const minUniElement = document.querySelector('#minUni');
@@ -83,18 +95,6 @@ function printTime() {
     printSeconds();
 }
 
-//Start function
-const btnStart = document.getElementById('Btn-start');
-
-btnStart.onclick = function() {
-    game = new Game(petsArray)
-    const page1 = document.querySelector('.page1');
-    const gamePage = document.querySelector('.Game-page');
-    page1.classList.add('hidden');
-    gamePage.classList.remove('hidden');
-    insertWord(game.getCurrentAnimal().name);
-    game.start(printTime, gamefinished);
-}
 
 // hint function 
 const hint = document.getElementById('hint');
@@ -170,6 +170,8 @@ const btnReset = document.getElementById('reset');
 btnReset.addEventListener('click', reset);
 
 function gamefinished() {
+    const finalMessage = document.querySelector('.finalMessage');
+    const gamePage = document.querySelector('.Game-page');
     const winner = document.querySelector('.winner');
     const end = document.querySelector('.end');
     if ((this.game.currentIndex / game.gameArray.length) >= 0.7) {
@@ -177,4 +179,14 @@ function gamefinished() {
     } else {
         end.classList.remove('hidden');
     }
+    finalMessage.classList.remove('hidden');
+    gamePage.classList.add('hidden');
+}
+
+const btnHp = document.getElementById('homePage');
+btnHp.onclick = function() {
+    const finalMessage = document.querySelector('.finalMessage');
+    const page1 = document.querySelector('.page1');
+    finalMessage.classList.add('hidden');
+    page1.classList.remove('hidden');
 }
