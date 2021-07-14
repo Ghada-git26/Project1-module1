@@ -65,7 +65,7 @@ const petsArray = [{
     },
 
     {
-        picture: "https://thumbs.dreamstime.com/z/cute-sloth-icon-flat-cartoon-style-vector-illustration-198421473.jpg",
+        picture: "https://image.freepik.com/free-vector/cute-cartoon-sloth-graphic_1324-328.jpg",
         id: 11,
         name: "Sloth",
     },
