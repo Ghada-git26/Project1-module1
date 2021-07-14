@@ -16,7 +16,7 @@ const petsArray = [{
     },
 
     {
-        picture: "https://i.dlpng.com/static/png/6862950_preview.png",
+        picture: "https://previews.123rf.com/images/yamayka/yamayka1609/yamayka160900099/62894462-animaux-de-bande-dessin%C3%A9e-pour-les-enfants-jaguar-mignon-si%C3%A8ge-et-sourit-.jpg",
         id: 4,
         name: "Jaguar",
     },
