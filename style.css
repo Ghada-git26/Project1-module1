@@ -44,6 +44,10 @@
         text-align: center;
     }
     
+    button {
+        cursor: pointer;
+    }
+    
     #Btn-start {
         border: none;
         background-color: rgb(255 255 255 / 80%);
