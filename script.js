@@ -55,7 +55,7 @@ const petsArray = [{
     {
         picture: "https://cdn.pixabay.com/photo/2013/07/13/11/56/frog-159002_960_720.png",
         id: 10,
-        name: "Frogg",
+        name: "Frog",
     },
 
     {
